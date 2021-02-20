@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row">
+    <div class="row bg-forms1">
       <div class="col intro">
         <h2>Analysing With Preptime Analyser</h2>
         <p>
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row results">
       <div class="col lap2">
         <img
           src="~assets/images/analser2.png"
@@ -65,7 +65,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row graph">
       <div class="col lap3-caption">
         <h2>Graph Of Correct Responses</h2>
         <p>
@@ -180,8 +180,14 @@ export default {};
   top: 766px;
 }
 .intro h2, .intro p {
-  color: #fffcff;
+  color: white;
 }
 
+.lap2-caption h2, .lap2-caption p{
+  color: white;
+}
+.lap3-caption h2, .lap3-caption p{
+  color: white;
+}
 
 </style>

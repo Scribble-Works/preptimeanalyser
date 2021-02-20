@@ -16,3 +16,8 @@
     padding-left: 50px;
     padding-right: 50px;
 }
+
+.bg-forms1{
+    background-image: url('../assets/images/preptime_bg.png');
+    background-color: #EFEEEE;
+}
