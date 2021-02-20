@@ -1,0 +1,18 @@
+.nav-link {
+    font-weight: bold;
+   
+}
+
+/* footer {
+    display: inline;
+} */
+
+.footer-link-a {
+    font-style: Roboto;
+    display: inline;
+}
+
+.navbar-nav > li {
+    padding-left: 50px;
+    padding-right: 50px;
+}
