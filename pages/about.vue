@@ -88,16 +88,26 @@
     </div>
 
     <div>
-      <h6>PredTime Analyser In Action</h6>
+      <h6>PrepTime Analyser In Action</h6>
       <h3>Everything you need to know about PrepTime Analyser</h3>
       <button>Blog</button>
     </div>
     <div class="row">
       <div class="col">
-        <img src="~assets/images/analser3.png" height="286px" width="381px" alt="">
+        <img
+          src="~assets/images/analser3.png"
+          height="286px"
+          width="381px"
+          alt=""
+        />
       </div>
       <div class="col">
-        <img src="~assets/images/google-analytics-dashboard-business-analytics-computer-icons-business.png" height="208px" width="208px" alt="">
+        <img
+          src="~assets/images/google-analytics-dashboard-business-analytics-computer-icons-business.png"
+          height="208px"
+          width="208px"
+          alt=""
+        />
       </div>
     </div>
   </div>
