@@ -11,7 +11,7 @@
       </p>
     </div>
 
-    <div class="price">
+    <div class="container price">
       <div class="row justify-content-around">
         <h3>Pricing</h3>
         <div class="col-1">
@@ -209,17 +209,17 @@
   width: 100%;
   background: #ffffff;
 }
-.studs .col-2{
+.studs .col-2 {
   position: absolute;
   left: 650px;
 }
 
-.studs .align-self-center{
+.studs .align-self-center {
   position: absolute;
   width: 226px;
   left: 647px;
   top: 143px;
-  background: #FFFFFF;
+  background: #ffffff;
   mix-blend-mode: normal;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
