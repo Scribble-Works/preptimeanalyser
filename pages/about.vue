@@ -17,7 +17,7 @@
         <div class="col-1">
           <h3>Free</h3>
           <h6>Free</h6>
-          <button class="">Start</button>
+          <a class="btn btn-secondary" href="#" role="button">Start</a>
           <hr class="hr-light" />
           <ul>
             <li>Feature 1</li>
@@ -29,7 +29,7 @@
         <div class="col-1">
           <h3>Basic</h3>
           <h6>Gh₵ 10 / month</h6>
-          <button class="">Buy</button>
+          <a class="btn btn-secondary" href="#" role="button">Buy</a>
           <hr class="hr-light" />
           <ul>
             <li>Feature 1</li>
@@ -41,7 +41,7 @@
         <div class="col-1">
           <h3>Standard</h3>
           <h6>Gh₵ 80 / month</h6>
-          <button class="">Buy</button>
+          <a class="btn btn-secondary" href="#" role="button">Buy</a>
           <hr class="hr-light" />
           <ul>
             <li>Feature 1</li>
@@ -53,7 +53,7 @@
         <div class="col-1">
           <h3>Enterprise</h3>
           <h6>Gh₵ 250 / month</h6>
-          <button class="">Buy</button>
+          <a class="btn btn-secondary" href="#" role="button">Buy</a>
           <hr class="hr-light" />
           <ul>
             <li>Feature 1</li>
@@ -92,10 +92,10 @@
       <div class="evrtng">
         <h6>PrepTime Analyser In Action</h6>
         <h3>Everything you need to know about PrepTime Analyser</h3>
-        <button>Blog</button>
+        <a class="btn btn-secondary" href="#" role="button">Blog</a>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col laptop">
           <img
             src="~assets/images/analser3.png"
             height="206px"
@@ -103,7 +103,7 @@
             alt=""
           />
         </div>
-        <div class="col">
+        <div class="col analyse">
           <img
             src="~assets/images/google-analytics-dashboard-business-analytics-computer-icons-business.png"
             height="208px"
@@ -222,5 +222,32 @@
   background: #ffffff;
   mix-blend-mode: normal;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.align-self-end {
+  position: absolute;
+  /* width: 313px; */
+  top: 3px;
+  left: 247px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.evrtng{
+  position: absolute;
+  top: 55px;
+  left: 348px;
+  width: 250px;
+}
+.laptop{
+  position: absolute;
+  width: 281px;
+  top: 52px;
+  left: 1072px;
+}
+.analyse{
+  position: absolute;
+  left: 1425px;
+  top: 85px;
 }
 </style>
