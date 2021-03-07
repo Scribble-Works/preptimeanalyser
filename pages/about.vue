@@ -17,7 +17,7 @@
         <div class="col-1">
           <h3>Free</h3>
           <h6>Free</h6>
-          <a class="btn btn-secondary" href="#" role="button">Start</a>
+          <a class="btn btn-secondary price-btn" href="#" role="button">Start</a>
           <hr class="hr-light" />
           <ul>
             <li>Feature 1</li>
@@ -29,7 +29,7 @@
         <div class="col-1">
           <h3>Basic</h3>
           <h6>Gh₵ 10 / month</h6>
-          <a class="btn btn-secondary" href="#" role="button">Buy</a>
+          <a class="btn btn-secondary price-btn" href="#" role="button">Buy</a>
           <hr class="hr-light" />
           <ul>
             <li>Feature 1</li>
@@ -41,7 +41,7 @@
         <div class="col-1">
           <h3>Standard</h3>
           <h6>Gh₵ 80 / month</h6>
-          <a class="btn btn-secondary" href="#" role="button">Buy</a>
+          <a class="btn btn-secondary price-btn" href="#" role="button">Buy</a>
           <hr class="hr-light" />
           <ul>
             <li>Feature 1</li>
@@ -53,7 +53,7 @@
         <div class="col-1">
           <h3>Enterprise</h3>
           <h6>Gh₵ 250 / month</h6>
-          <a class="btn btn-secondary" href="#" role="button">Buy</a>
+          <a class="btn btn-secondary price-btn" href="#" role="button">Buy</a>
           <hr class="hr-light" />
           <ul>
             <li>Feature 1</li>
@@ -249,5 +249,12 @@
   position: absolute;
   left: 1425px;
   top: 85px;
+}
+
+.col-1 .price-btn{
+  position: relative;
+  width: 108px;
+  height: 40px;
+  left: 15px;
 }
 </style>
