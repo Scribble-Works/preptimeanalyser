@@ -49,4 +49,8 @@
 </template>
 
 <style>
+.img{
+  position: relative;
+  left: 350px;
+}
 </style>

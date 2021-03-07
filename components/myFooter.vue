@@ -42,7 +42,7 @@ footer {
   width: 2020px;
   height: 73px;
   left: 0px;
-  top: 1014px;
+  top: 1114px;
   background-color: rgba(196, 196, 196, 1);
 }
 .footer-links {
