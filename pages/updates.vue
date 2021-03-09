@@ -141,7 +141,7 @@
         </div>
 
         <div class="btn">
-          <a class="btn btn-secondary" href="#" role="button"
+          <a class="btn btn-secondary btn-lg" href="#" role="button"
             >Load More Stories</a
           >
         </div>

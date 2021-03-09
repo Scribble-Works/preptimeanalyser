@@ -106,7 +106,7 @@
         </div>
 
         <div class="btn">
-          <a class="btn btn-secondary" href="#" role="button"
+          <a class="btn btn-secondary btn-lg" href="#" role="button"
             >Load More Stories</a
           >
         </div>
@@ -123,7 +123,7 @@ body {
   position: relative;
   top: 80px;
 }
-.btn-secondary{
+.btn-lg{
   position: relative;
   width: 1184px;
   border-radius: 20px;

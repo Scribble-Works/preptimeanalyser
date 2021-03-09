@@ -151,7 +151,7 @@
 
         <div class="btn">
           <div class="btn">
-            <a class="btn btn-secondary" href="#" role="button"
+            <a class="btn btn-secondary btn-lg" href="#" role="button"
               >Load More Blog</a
             >
           </div>
