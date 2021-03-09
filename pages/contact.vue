@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container form">
-      <form action="">
+      <form action="" method="POST">
         <h2>GET IN TOUCH</h2>
         <div class="row">
           <div class="col">
@@ -43,10 +43,11 @@
 </template>
 <style>
 .form {
-  position: absolute;
+  position: relative;
   width: 1022px;
   height: 723px;
   top: 152px;
+  left: 50px;
   background: #ffffff;
 }
 
@@ -82,15 +83,15 @@ input {
   position: relative;
   width: 832px;
 }
-#number{
+#number {
   position: relative;
   right: 70px;
 }
-form h2{
+form h2 {
   position: relative;
   left: 90px;
 }
-form{
+form {
   position: relative;
   top: 80px;
 }
