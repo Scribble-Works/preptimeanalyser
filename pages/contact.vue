@@ -52,6 +52,7 @@
 }
 
 form .btn .btn-secondary {
+  position: relative;
   width: 251px;
   left: 324px;
   top: 20px;
@@ -95,4 +96,5 @@ form {
   position: relative;
   top: 80px;
 }
+
 </style>

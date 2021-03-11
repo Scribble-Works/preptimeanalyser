@@ -79,6 +79,7 @@
           <a class="btn btn-secondary btn-blog" href="#" role="button">Blog</a>
         </div>
       </div>
+      
       <div class="col-auto">
         <img src="~assets/images/analser2.png" height="206px" width="281px" alt="" />
       </div>
@@ -165,5 +166,9 @@
   height: 204px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #FFFFFF;
+}
+.blog .col-auto{
+  position: relative;
+  left: 750px;
 }
 </style>
