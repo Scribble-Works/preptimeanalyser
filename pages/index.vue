@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row bg-forms1">
+    <div class="row about">
       <div class="col intro">
         <h2>Analysing With Preptime Analyser</h2>
         <p>
@@ -189,5 +189,6 @@ export default {};
 .lap3-caption h2, .lap3-caption p{
   color: white;
 }
+
 
 </style>

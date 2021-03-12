@@ -1,43 +1,45 @@
 <template>
   <div>
-    <div class="container form">
-      <form action="" method="POST">
-        <h2>GET IN TOUCH</h2>
-        <div class="row">
-          <div class="col">
-            <h5>Tell us your name</h5>
-            <input
-              name="name"
-              type="text"
-              placeholder="Micheal Martey"
-              required
-            />
+    <div class="body-contact">
+      <div class="container form">
+        <form action="" method="POST">
+          <h2>GET IN TOUCH</h2>
+          <div class="row">
+            <div class="col">
+              <h5>Tell us your name</h5>
+              <input
+                name="name"
+                type="text"
+                placeholder="Micheal Martey"
+                required
+              />
+            </div>
+            <div class="col" id="number">
+              <h5>Enter your telephone number</h5>
+              <input name="tel" type="text" placeholder="0244444444" required />
+            </div>
           </div>
-          <div class="col" id="number">
-            <h5>Enter your telephone number</h5>
-            <input name="tel" type="text" placeholder="0244444444" required />
+          <div class="row">
+            <div class="col">
+              <h5>Enter your email address</h5>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="mikeMartey@gmail.com"
+                required
+              />
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h5>Enter your email address</h5>
-            <input
-              id="email"
-              name="email"
-              type="text"
-              placeholder="mikeMartey@gmail.com"
-              required
-            />
+          <div class="msg">
+            <h5>Your message</h5>
+            <input name="message" placeholder="How can we help you?" id="" />
           </div>
-        </div>
-        <div class="msg">
-          <h5>Your message</h5>
-          <input name="message" placeholder="How can we help you?" id="" />
-        </div>
-        <div class="btn">
-          <a class="btn btn-secondary" href="#" role="button">Send</a>
-        </div>
-      </form>
+          <div class="btn">
+            <a class="btn btn-secondary" href="#" role="button">Send</a>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </template>
@@ -49,6 +51,14 @@
   top: 152px;
   left: 50px;
   background: #ffffff;
+}
+
+.body-contact{
+  position: relative;
+}
+
+.body-contact:before{
+  background: #fffcff url(~assets/images/preptime_bg_2.png);
 }
 
 form .btn .btn-secondary {
@@ -96,5 +106,4 @@ form {
   position: relative;
   top: 80px;
 }
-
 </style>
