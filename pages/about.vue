@@ -17,7 +17,9 @@
         <h3>Free</h3>
         <h5>Free</h5>
         <div class="btn">
-          <a class="btn btn-secondary btn-sm" href="#" role="button">Start</a>
+          <NuxtLink class="btn btn-secondary btn-sm" to="#" role="button"
+            >Start</NuxtLink
+          >
         </div>
         <hr />
         <ul class="features">
@@ -31,7 +33,9 @@
         <h3>Basic</h3>
         <h5>GH₵10 / month</h5>
         <div class="btn">
-          <a class="btn btn-secondary btn-sm" href="#" role="button">Buy</a>
+          <NuxtLink class="btn btn-secondary btn-sm" to="#" role="button"
+            >Buy</NuxtLink
+          >
         </div>
         <hr />
         <ul class="features">
@@ -45,7 +49,9 @@
         <h3>Standard</h3>
         <h5>GH₵80 / month</h5>
         <div class="btn">
-          <a class="btn btn-secondary btn-sm" href="#" role="button">Buy</a>
+          <NuxtLink class="btn btn-secondary btn-sm" to="#" role="button"
+            >Buy</NuxtLink
+          >
         </div>
         <hr />
         <ul class="features">
@@ -59,7 +65,9 @@
         <h3>Enterprice</h3>
         <h5>GH₵250 / month</h5>
         <div class="btn">
-          <a class="btn btn-secondary btn-sm" href="#" role="button">Buy</a>
+          <NuxtLink class="btn btn-secondary btn-sm" to="#" role="button"
+            >Buy</NuxtLink
+          >
         </div>
         <hr />
         <ul class="features">
@@ -70,7 +78,7 @@
         </ul>
       </div>
     </div>
-    
+
     <div class="row blog">
       <div class="col-2">
         <h6>PrepTime Analyser in Action</h6>
@@ -79,9 +87,14 @@
           <a class="btn btn-secondary btn-blog" href="#" role="button">Blog</a>
         </div>
       </div>
-      
+
       <div class="col-auto">
-        <img src="~assets/images/analser2.png" height="206px" width="281px" alt="" />
+        <img
+          src="~assets/images/analser2.png"
+          height="206px"
+          width="281px"
+          alt=""
+        />
       </div>
       <div class="col-auto">
         <img
@@ -96,11 +109,11 @@
 </template>
 
 <style>
-.about{
+.about {
   position: relative;
 }
-.about:before{
-  content: '';
+.about:before {
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -108,37 +121,38 @@
   width: 100%;
   height: 100%;
   opacity: 0.4;
-  background: #EFEEEE url(~assets/images/preptime_bg.png) repeat-x;
+  background: #efeeee url(~assets/images/preptime_bg.png) repeat-x;
   background-size: cover;
 }
-.container-about h5{
+.container-about h5 {
   position: absolute;
   width: 68px;
   height: 22px;
   color: rgba(0, 0, 0, 0.65);
   font-size: 15px;
-  /* left: 310px; */
+  left: 40px;
 }
 
-.container-about h3{
+.container-about h3 {
   position: absolute;
   width: 252px;
   height: 50px;
   color: #000;
-  font-family: "Squada_One"; 
+  font-family: "Squada_One";
   font-size: 18px;
   font-weight: bold;
+  left: 40px;
   top: 20px;
 }
 
-.blog{
+.blog {
   position: relative;
   height: 300px;
   top: 350px;
   left: 0px;
 }
-.blog:before{
-  content: '';
+.blog:before {
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -146,7 +160,7 @@
   width: 100%;
   height: 100%;
   opacity: 0.4;
-  background: #EFEEEE url(~assets/images/preptime_bg.png) no-repeat;
+  background: #efeeee url(~assets/images/preptime_bg.png) no-repeat;
   background-size: cover;
 }
 .container-about {
@@ -155,15 +169,15 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   top: 100px;
   width: 310px;
-  height: 180px;
+  height: 190px;
   left: 268px;
 }
 
-.container-about p{
+.container-about p {
   position: absolute;
   width: 232px;
   height: 76px;
-  left: 0px;
+  left: 40px;
   font-size: 12px;
   top: 80px;
 }
@@ -174,27 +188,27 @@
   height: 340px;
   top: 300px;
 }
-.pricing h3{
+.pricing h3 {
   position: relative;
   left: 80px;
 }
-.pricing .col-2{
+.pricing .col-2 {
   position: relative;
-  background: #FFFFFF; 
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   top: -15px;
 }
-.blog .col-2 h3{
+.blog .col-2 h3 {
   width: 250px;
 }
-.blog .col-2{
+.blog .col-2 {
   position: relative;
   left: 250px;
   height: 204px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background: #FFFFFF;
+  background: #ffffff;
 }
-.blog .col-auto{
+.blog .col-auto {
   position: relative;
   left: 750px;
 }

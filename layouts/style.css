@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif;
+}
 .nav-link {
     font-weight: bold;
    
@@ -24,11 +27,20 @@
 
 /* @font-face {
     font-family: "Squada_One";
+    font-style: normal;
+    font-weight: 400;
     src: local("Squada_One"), 
      url(~assets/fonts/Squada_One/SquadaOne-Regular.ttf) format("truetype");
 } */
 
 h2 {
-    font-family: "Squada_One";
+    font-family: "Squada_One", sans-serif;
+    font-style: normal;
 }
 
+h5{
+    font-family: "Roboto",sans-serif;
+}
+p{
+
+}
