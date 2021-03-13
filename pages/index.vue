@@ -131,7 +131,7 @@ export default {};
   height: 76px;
   left: 255px;
   top: 50px;
-  font-family: Squada One;
+  /* font-family: "Squada_One"; */
   font-weight: bold;
   font-style: normal;
   font-size: 25px;

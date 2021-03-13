@@ -21,3 +21,14 @@
     background-image: url('../assets/images/preptime_bg.png');
     background-color: #EFEEEE;
 } */
+
+/* @font-face {
+    font-family: "Squada_One";
+    src: local("Squada_One"), 
+     url(~assets/fonts/Squada_One/SquadaOne-Regular.ttf) format("truetype");
+} */
+
+h2 {
+    font-family: "Squada_One";
+}
+
