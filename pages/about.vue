@@ -111,6 +111,25 @@
   background: #EFEEEE url(~assets/images/preptime_bg.png) repeat-x;
   background-size: cover;
 }
+.container-about h5{
+  position: absolute;
+  width: 68px;
+  height: 22px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 15px;
+  /* left: 310px; */
+}
+
+.container-about h3{
+  position: absolute;
+  width: 252px;
+  height: 50px;
+  color: #000;
+  font-family: "Squada_One"; 
+  font-size: 18px;
+  font-weight: bold;
+  top: 20px;
+}
 
 .blog{
   position: relative;
@@ -133,13 +152,21 @@
 .container-about {
   background: #fff9f9;
   position: absolute;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   top: 100px;
   width: 310px;
   height: 180px;
   left: 268px;
 }
 
-
+.container-about p{
+  position: absolute;
+  width: 232px;
+  height: 76px;
+  left: 0px;
+  font-size: 12px;
+  top: 80px;
+}
 .pricing {
   background: #3e4f5c;
   position: relative;

@@ -36,7 +36,7 @@
             <input name="message" placeholder="How can we help you?" id="" />
           </div>
           <div class="btn">
-            <a class="btn btn-secondary" href="#" role="button">Send</a>
+            <NuxtLink class="btn btn-secondary" to="#" role="button">Send</NuxtLink>
           </div>
         </form>
       </div>
