@@ -33,15 +33,25 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
-    '@nuxtjs/google-fonts'
+    'bootstrap-vue/nuxt'
   ],
-
+  //google fonts impleemntation
+  googleFonts: {
+    families: {
+      Roboto: true,
+      Squada_One: true,
+      PT_Sans: true
+    },
+    display: 'swap',
+    subsets: 'cyrillic',
+    prefetch: true
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
 
