@@ -130,6 +130,7 @@
   height: 22px;
   color: rgba(0, 0, 0, 0.65);
   font-size: 15px;
+  font-family: "Squada_One";
   left: 40px;
 }
 

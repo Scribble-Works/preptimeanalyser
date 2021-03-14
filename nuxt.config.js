@@ -50,7 +50,18 @@ export default {
     },
     display: 'swap',
     subsets: 'cyrillic',
-    prefetch: true
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    useStylesheet: false,
+    download: true,
+    base64: false,
+    inject: true,
+    overwriting: false,
+    //outputDir: this.options.dir.assets,
+    stylePath: 'css/fonts.css',
+    fontsDir: 'fonts',
+    fontsPath: '~assets/fonts'
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
