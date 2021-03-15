@@ -192,7 +192,5 @@
 </template>
 
 <style>
-body {
-  background: #efeeee;
-}
+
 </style>

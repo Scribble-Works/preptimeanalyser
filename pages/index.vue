@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row about">
+    <div class="row-fluid about">
       <div class="col intro">
         <h2>Analysing With Preptime Analyser</h2>
         <p>
@@ -95,100 +95,6 @@ export default {};
 </script>
 
 <style>
-.row{
-  width: auto;
-}
-.intro {
-  /* margin-top: 10%; */
-  position: absolute;
-  width: 588px;
-  height: 249px;
-  left: 300px;
-  top: 93px;
-
-  background: rgba(36, 145, 206, 0.95);
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.intro-lap {
-  position: absolute;
-  left: 1121px;
-  width: 462px;
-  top: 75px;
-}
-
-.rnd {
-  position: absolute;
-  width: 1014px;
-  height: 170px;
-  left: 0px;
-  top: 368px;
-  background: rgba(232, 211, 21, 1);
-}
-.rnd h2 {
-  position: absolute;
-  width: 284px;
-  height: 76px;
-  left: 255px;
-  top: 50px;
-  /* font-family: "Squada_One"; */
-  font-weight: bold;
-  font-style: normal;
-  font-size: 25px;
-  line-height: 26px;
-  display: flex;
-  align-items: center;
-  color: rgba(0, 0, 0, 1);
-}
-
-.rnd2 {
-  position: absolute;
-  width: 1050px;
-  height: 170px;
-  left: 914px;
-  top: 368px;
-  background: #fffcff;
-}
-.lap2 {
-  position: absolute;
-  left: 227px;
-  top: 515px;
-  width: 395px;
-}
-.lap2-caption {
-  position: absolute;
-  width: 1111px;
-  height: 248px;
-  left: 914px;
-  top: 541px;
-  background: rgba(189, 33, 33, 1);
-}
-
-.lap3-caption {
-  position: absolute;
-  width: 915px;
-  height: 226px;
-  left: 0px;
-  top: 788px;
-  background: rgba(51, 160, 33, 1);
-}
-
-.lap3{
-  position: absolute;
-  width: 342px;
-  left: 1225px;
-  top: 766px;
-}
-.intro h2, .intro p {
-  color: white;
-}
-
-.lap2-caption h2, .lap2-caption p{
-  color: white;
-}
-.lap3-caption h2, .lap3-caption p{
-  color: white;
-}
 
 
 </style>

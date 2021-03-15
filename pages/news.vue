@@ -130,24 +130,5 @@
 </template>
 
 <style>
-body {
-  background: #efeeee;
-}
-.container {
-  position: relative;
-  top: 80px;
-}
-.btn-lg {
-  position: relative;
-  width: 1184px;
-  border-radius: 20px;
-  right: 20px;
-}
-.btn-link {
-  color: #000000;
-}
 
-a{
-  color: #000000;
-}
 </style>
