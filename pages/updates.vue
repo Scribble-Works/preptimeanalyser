@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="row">
+      <div class="row top-buffer">
         <div class="col">
           <img
             src="~assets/images/PrepTime analyser logo.png"
@@ -158,7 +158,7 @@
 
 <style>
 blockquote {
-  position: absolute;
+  /* position: absolute; */
   height: 286px;
   width: 310px;
 }

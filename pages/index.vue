@@ -1,19 +1,21 @@
 <template>
-  <div>
-    <div class="row-fluid about">
-      <div class="col intro">
-        <h2>Analysing With Preptime Analyser</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-          error rem consequatur ad unde tempora dolore? Provident reiciendis,
-          libero unde voluptatum impedit quod odio quibusdam consequuntur
-          dignissimos. Eligendi, cum. Obcaecati? Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Rerum quod neque facere, in molestiae
-          labore ipsum, vel animi, dignissimos repellendus asperiores ut quae!
-          Sint similique incidunt doloribus deleniti dolore quas.
-        </p>
+  <div class="container-fluid">
+    <div class="row about form-bg top-buffer">
+      <div class="col-7 mx-5">
+        <div class="h-45 mx-5">
+          <h2>Analysing With Preptime Analyser</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            error rem consequatur ad unde tempora dolore? Provident reiciendis,
+            libero unde voluptatum impedit quod odio quibusdam consequuntur
+            dignissimos. Eligendi, cum. Obcaecati? Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Rerum quod neque facere, in molestiae
+            labore ipsum, vel animi, dignissimos repellendus asperiores ut quae!
+            Sint similique incidunt doloribus deleniti dolore quas.
+          </p>
+        </div>
       </div>
-      <div class="col intro-lap">
+      <div class="col-3 intro-lap">
         <img
           src="~assets/images/analser1.png"
           height="284px"
@@ -25,7 +27,7 @@
 
     <div class="row">
       <div class="col rnd">
-        <h2 class="text-center">Research & Development</h2>
+        <h2 class="text-center my-5">Research & Development</h2>
       </div>
       <div class="col rnd2">
         <h2>
@@ -40,9 +42,10 @@
       </div>
     </div>
 
-    <div class="row results">
-      <div class="col lap2">
+    <div class="row">
+      <div class="col lap2 sheet-bg">
         <img
+          class="mx-5"
           src="~assets/images/analser2.png"
           height="281px"
           width="395px"
@@ -66,7 +69,7 @@
       </div>
     </div>
     <div class="row graph">
-      <div class="col lap3-caption">
+      <div class="col-7 lap3-caption">
         <h2>Graph Of Correct Responses</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -75,11 +78,19 @@
           placeat voluptate quisquam! Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Eveniet accusantium quibusdam ducimus molestias
           atque voluptatum adipisci assumenda voluptates totam. Aliquam
-          similique magni a eos minus molestiae cum iste laboriosam id.
+          similique magni a eos minus molestiae cum iste laboriosam id. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. A, non dignissimos?
+          Esse, quidem commodi qui labore corporis maiores dolores dolore
+          dolorem aliquid cupiditate itaque quo incidunt pariatur inventore
+          facere voluptatibus. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Incidunt distinctio officia quos harum, rem quae
+          magni sint autem error quas saepe? Enim, eveniet et fuga hic doloribus
+          aliquid dignissimos quisquam.
         </p>
       </div>
-      <div class="col lap3">
+      <div class="col mx-5 lap3 sheet-bg">
         <img
+          class="mx-5"
           src="~assets/images/analser3.png"
           height="251px"
           width="342px"
@@ -95,6 +106,41 @@ export default {};
 </script>
 
 <style>
+.top-buffer {
+  margin-top: 100px;
+}
+.h-45 {
+  padding: 1%;
+  height: 249px;
+  width: 588px;
+  background: rgba(36, 145, 206, 0.95);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+.rnd {
+  height: 170px;
+  background: #e8d315;
+}
 
+.rnd2 {
+  background: #fffcfc;
+  width: 100%;
+  height: 170px;
+}
+
+.lap2-caption {
+  background: #bd2121;
+}
+.lap3-caption {
+  background: #33a021;
+}
+.h-45 h2, .h-45 p{
+  color: #FFFDFD;
+}
+.lap2-caption h2, .lap2-caption p{
+  color: #FFFDFD;
+}
+.lap3-caption h2, .lap3-caption p{
+  color: #FFFDFD;
+}
 </style>

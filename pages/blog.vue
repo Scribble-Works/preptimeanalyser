@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="row">
+      <div class="row top-buffer">
         <h4>All The Latest</h4>
         <NuxtLink to="">
           <div class="row">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="body-contact">
+    <div class="body-contact top-buffer">
       <div class="container form">
         <form action="" method="POST">
           <h2>GET IN TOUCH</h2>

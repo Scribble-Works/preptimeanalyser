@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container-fluid">
     <div class="container">
-      <div class="row">
+      <div class="row top-buffer">
         <div class="col">
           <img
             src="~assets/images/accra_col1.jpg"

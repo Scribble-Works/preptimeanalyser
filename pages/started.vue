@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container top-buffer">
       <div class="img">
         <img
           src="~assets/images/privacy.png"

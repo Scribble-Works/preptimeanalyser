@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <div class="container-about">
+  <div class="container-fluid about">
+    <div class="container-about top-buffer">
       <h5>About</h5>
       <h3>Bringing the benefits of Preptime Analyser to every educator</h3>
       <p>
