@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid about">
-    <div class="container-about top-buffer">
+  <div class="container-fluid form-bg">
+    <div class="container-about">
       <h5>About</h5>
       <h3>Bringing the benefits of Preptime Analyser to every educator</h3>
       <p>
@@ -109,5 +109,9 @@
 </template>
 
 <style>
-
+.container-about{
+  background: #FFF9F9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 310px;
+}
 </style>
