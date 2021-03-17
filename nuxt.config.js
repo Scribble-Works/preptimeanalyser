@@ -69,7 +69,7 @@ export default {
   },
   server: {
     port: 8080, // default: 3000
-    host: 'localhost', // default: localhost,
+    host: '0.0.0.0', // default: localhost,
     timing: false
   }
 }
