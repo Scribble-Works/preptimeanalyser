@@ -16,10 +16,10 @@ RUN ls
 COPY package*.json ./
 
 # Install production dependencies.
-RUN npm install
+RUN yarn install
 
 # Build Admin Frontend
-RUN npm run build
+RUN yarn build
 
 # Run the web service on container startup.
-CMD [ "npm", "start" ]
+CMD [ "yarn", "start" ]
