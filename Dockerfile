@@ -1,25 +1,14 @@
-# Use the official lightweight Node.js 12 image.
-# https://hub.docker.com/_/node
-FROM node:12
+FROM node:14
 
-# Create and change to the app directory.
 WORKDIR /usr/src/app
 
-# Copy local code to the container image.
-COPY . ./
+COPY package.json ./
+RUN yarn
 
-RUN ls
+COPY . .
+EXPOSE 8080
+ENV NUXT_PORT=8080
 
-# Copy application dependency manifests to the container image.
-# A wildcard is used to ensure both package.json AND package-lock.json are copied.
-# Copying this separately prevents re-running npm install on every code change.
-#  COPY package*.json ./
-
-# Install production dependencies.
-RUN yarn install
-
-# Build Admin Frontend
 RUN yarn build
 
-# Run the web service on container startup.
 CMD [ "yarn", "start" ]
