@@ -37,7 +37,13 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aperiam
           minus aspernatur eveniet quo minima magni ducimus possimus
           necessitatibus, libero debitis numquam. Accusamus magnam accusantium
-          quam aliquid. Rerum, debitis eum!
+          quam aliquid. Rerum, debitis eum! Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Eum minima voluptatem error veniam rem
+          fugit, tempora tempore dignissimos recusandae repudiandae. Perferendis
+          optio provident dignissimos fugiat cum corporis quae accusantium
+          alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          harum ut hic est delectus voluptatum, animi, laborum id accusamus
+          eaque 
         </p>
       </div>
     </div>
@@ -118,14 +124,14 @@ export default {};
 }
 
 .rnd {
-  height: 170px;
+  height: 100%;
   background: #e8d315;
 }
 
 .rnd2 {
   background: #fffcfc;
   width: 100%;
-  height: 170px;
+  height: 100%;
 }
 
 .lap2-caption {
@@ -134,13 +140,16 @@ export default {};
 .lap3-caption {
   background: #33a021;
 }
-.h-45 h2, .h-45 p{
-  color: #FFFDFD;
+.h-45 h2,
+.h-45 p {
+  color: #fffdfd;
 }
-.lap2-caption h2, .lap2-caption p{
-  color: #FFFDFD;
+.lap2-caption h2,
+.lap2-caption p {
+  color: #fffdfd;
 }
-.lap3-caption h2, .lap3-caption p{
-  color: #FFFDFD;
+.lap3-caption h2,
+.lap3-caption p {
+  color: #fffdfd;
 }
 </style>

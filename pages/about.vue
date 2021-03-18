@@ -1,22 +1,24 @@
 <template>
-  <div class="container-fluid form-bg">
+  <div class="container-fluid py-5">
     <div class="container-about">
-      <h5>About</h5>
-      <h3>Bringing the benefits of Preptime Analyser to every educator</h3>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eum
-        doloremque facere dolor sapiente. Soluta laudantium quasi inventore, nam
-        ullam placeat iste possimus totam ipsum exercitationem ut, officia id
-        rerum?
-      </p>
+      <div class="about-sec">
+        <h5>About</h5>
+        <h3>Bringing the benefits of Preptime Analyser to every educator</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eum
+          doloremque facere dolor sapiente. Soluta laudantium quasi inventore,
+          nam ullam placeat iste possimus totam ipsum exercitationem ut, officia
+          id rerum?
+        </p>
+      </div>
     </div>
 
     <div class="row justify-content-between pricing">
       <h3>Pricing</h3>
       <div class="container col-2">
-        <h3>Free</h3>
-        <h5>Free</h5>
-        <div class="btn">
+        <h3 class="text-center">Free</h3>
+        <h5 class="text-center">Free</h5>
+        <div class="btn px-5 ml-5">
           <NuxtLink class="btn btn-secondary btn-sm" to="#" role="button"
             >Start</NuxtLink
           >
@@ -30,9 +32,9 @@
         </ul>
       </div>
       <div class="container col-2">
-        <h3>Basic</h3>
-        <h5>GH₵10 / month</h5>
-        <div class="btn">
+        <h3 class="text-center">Basic</h3>
+        <h5 class="text-center">GH₵10 / month</h5>
+        <div class="btn px-5 ml-5">
           <NuxtLink class="btn btn-secondary btn-sm" to="#" role="button"
             >Buy</NuxtLink
           >
@@ -46,9 +48,9 @@
         </ul>
       </div>
       <div class="container col-2">
-        <h3>Standard</h3>
-        <h5>GH₵80 / month</h5>
-        <div class="btn">
+        <h3 class="text-center">Standard</h3>
+        <h5 class="text-center">GH₵80 / month</h5>
+        <div class="btn px-5 ml-5">
           <NuxtLink class="btn btn-secondary btn-sm" to="#" role="button"
             >Buy</NuxtLink
           >
@@ -62,9 +64,9 @@
         </ul>
       </div>
       <div class="container col-2">
-        <h3>Enterprice</h3>
-        <h5>GH₵250 / month</h5>
-        <div class="btn">
+        <h3 class="text-center">Enterprice</h3>
+        <h5 class="text-center">GH₵250 / month</h5>
+        <div class="btn px-5 ml-5">
           <NuxtLink class="btn btn-secondary btn-sm" to="#" role="button"
             >Buy</NuxtLink
           >
@@ -79,12 +81,16 @@
       </div>
     </div>
 
-    <div class="row blog">
-      <div class="col-2">
-        <h6>PrepTime Analyser in Action</h6>
-        <h3>Everything you need to know about PrepTime Analyser</h3>
-        <div class="btn">
-          <a class="btn btn-secondary btn-blog" href="#" role="button">Blog</a>
+    <div class="row blog mt-3">
+      <div class="col-8">
+        <div class="action">
+          <h6>PrepTime Analyser in Action</h6>
+          <h3>Everything you need to know about PrepTime Analyser</h3>
+          <div class="btn">
+            <NuxtLink class="btn btn-secondary btn-blog" to="#" role="button"
+              >Blog</NuxtLink
+            >
+          </div>
         </div>
       </div>
 
@@ -109,9 +115,25 @@
 </template>
 
 <style>
-.container-about{
-  background: #FFF9F9;
+.about-sec {
+  background: #fff9f9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 310px;
+}
+
+.pricing {
+  background: #3e4f5c;
+  height: 110%;
+  width: 100%;
+}
+.col-2 {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.action{
+  background: #FFFFFF;
+  width: 254px;
+  height: 184px;
 }
 </style>
