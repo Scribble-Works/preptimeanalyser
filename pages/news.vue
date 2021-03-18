@@ -32,8 +32,8 @@
         <div class="col">
           <NuxtLink to="#">
             <h4>
-              MP for Ayawaso West Destrict Provided Funds To Gov't Schools To
-              Use ...
+              MP For Ayawaso West Disptrict Provided Funds To Gov’t Schools To
+              Use Prep...
             </h4>
             <img
               src="~assets/images/naps2.jpg"

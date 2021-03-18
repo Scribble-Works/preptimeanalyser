@@ -162,4 +162,7 @@ blockquote {
   height: 286px;
   width: 310px;
 }
+.btn-link{
+  color: #000;
+}
 </style>
