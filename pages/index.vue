@@ -28,6 +28,10 @@
     <div class="row">
       <div class="col rnd">
         <h2 class="text-center my-5">Research & Development</h2>
+        <div>
+          <br />
+          <br />
+        </div>
       </div>
       <div class="col rnd2">
         <h2>
@@ -43,7 +47,7 @@
           optio provident dignissimos fugiat cum corporis quae accusantium
           alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
           harum ut hic est delectus voluptatum, animi, laborum id accusamus
-          eaque 
+          eaque
         </p>
       </div>
     </div>

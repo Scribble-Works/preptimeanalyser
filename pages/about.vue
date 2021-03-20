@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid py-5">
+  <div class="container-fluid form-bg py-5">
     <br /><br />
     <div class="container-about">
       <div class="about-sec">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="body-contact top-buffer">
+    <div class="body-contact top-buffer form-bg">
       <div class="container form">
         <form action="" method="POST">
           <h2>GET IN TOUCH</h2>
@@ -44,5 +44,7 @@
   </div>
 </template>
 <style>
-
+.form{
+  background: #FFFFFF;
+}
 </style>
