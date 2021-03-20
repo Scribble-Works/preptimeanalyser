@@ -100,7 +100,6 @@
       </div>
       <div class="col mx-5 lap3 sheet-bg">
         <img
-          class="mx-5"
           src="~assets/images/analser3.png"
           height="251px"
           width="342px"
@@ -128,14 +127,11 @@ export default {};
 }
 
 .rnd {
-  height: 100%;
   background: #e8d315;
 }
 
 .rnd2 {
   background: #fffcfc;
-  width: 100%;
-  height: 100%;
 }
 
 .lap2-caption {

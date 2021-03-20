@@ -14,9 +14,9 @@
       </div>
     </div>
 
-    <div class="row pricing">
+    <div class="row pricing px-5 justify-content-between">
       <h3 class="pl-5">Pricing</h3>
-      <div class="container col-2">
+      <div class="container col-md-2">
         <h3 class="text-center">Free</h3>
         <h5 class="text-center">Free</h5>
         <div class="btn px-5 ml-5">
@@ -32,7 +32,7 @@
           <li>Feature 4</li>
         </ul>
       </div>
-      <div class="container col-2">
+      <div class="container col-md-2">
         <h3 class="text-center">Basic</h3>
         <h5 class="text-center">GH₵10 / month</h5>
         <div class="btn px-5 ml-5">
@@ -48,7 +48,7 @@
           <li>Feature 4</li>
         </ul>
       </div>
-      <div class="container col-2">
+      <div class="container col-md-2">
         <h3 class="text-center">Standard</h3>
         <h5 class="text-center">GH₵80 / month</h5>
         <div class="btn px-5 ml-5">
@@ -64,7 +64,7 @@
           <li>Feature 4</li>
         </ul>
       </div>
-      <div class="container col-2">
+      <div class="container col-md-2">
         <h3 class="text-center">Enterprice</h3>
         <h5 class="text-center">GH₵250 / month</h5>
         <div class="btn px-5 ml-5">
@@ -129,7 +129,7 @@
   height: 110%;
   width: 100%;
 }
-.col-2 {
+.col-md-2{
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -142,7 +142,7 @@
 
 .btn-sm{
   border-radius: 25px;
-  width: 100px;
+  /* width: 100px; */
 }
 
 .blog .btn-lg{
