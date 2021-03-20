@@ -181,7 +181,7 @@
 
         <div class="btn">
           <div class="btn">
-            <NuxtLink class="btn btn-secondary btn-lg" to="#" role="button"
+            <NuxtLink class="btn btn-secondary btn-lg btn-block" to="#" role="button"
               >Load More Blog</NuxtLink
             >
           </div>

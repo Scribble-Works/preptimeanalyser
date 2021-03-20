@@ -2,17 +2,18 @@
   <div>
     <footer>
       <div class="container-fluid">
-        <div class="img-link">
-          <NuxtLink to="/"
-            ><img
-              src="~assets/images/PrepTime analyser bw.png"
-              height="70px"
-              width="auto"
-              alt=""
-          /></NuxtLink>
-        </div>
-
         <div class="row justify-content-between footer-docs">
+          <div class="col">
+            <div class="img-link">
+              <NuxtLink to="/"
+                ><img
+                  src="~assets/images/PrepTime analyser bw.png"
+                  height="70px"
+                  width="auto"
+                  alt=""
+              /></NuxtLink>
+            </div>
+          </div>
           <div class="col">
             <NuxtLink class="footer-links" to="">Privacy</NuxtLink>
           </div>
@@ -37,5 +38,4 @@
 export default {};
 </script>
 <style>
-
 </style>

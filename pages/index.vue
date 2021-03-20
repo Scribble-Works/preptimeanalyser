@@ -15,11 +15,11 @@
           </p>
         </div>
       </div>
-      <div class="col-3 intro-lap">
+      <div class="col intro-lap">
         <img
           src="~assets/images/analser1.png"
-          height="284px"
-          width="426px"
+          height="214px"
+          width="326px"
           alt=""
         />
       </div>
@@ -79,7 +79,7 @@
       </div>
     </div>
     <div class="row graph">
-      <div class="col-7 lap3-caption">
+      <div class="col lap3-caption">
         <h2>Graph Of Correct Responses</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -121,8 +121,8 @@ export default {};
 }
 .h-45 {
   padding: 1%;
-  height: 249px;
-  width: 588px;
+  height: 100%;
+  width: 85%;
   background: rgba(36, 145, 206, 0.95);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
