@@ -4,9 +4,9 @@
       <NuxtLink class="navbar-brand" to="/"
         ><img
           src="~assets/images/PrepTime analyser logo.png"
-          height="50px"
-          width="125px"
+          width="30"
           alt=""
+          class="d-inline-block align-top"
       /></NuxtLink>
       <button
         class="navbar-toggler"
@@ -29,7 +29,9 @@
               <NuxtLink class="nav-link" to="/news">News Article</NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink class="nav-link" to="/updates">Products Updates</NuxtLink>
+              <NuxtLink class="nav-link" to="/updates"
+                >Products Updates</NuxtLink
+              >
             </li>
             <li class="nav-item">
               <NuxtLink class="nav-link" to="/blog">Blog Post</NuxtLink>
@@ -51,11 +53,11 @@ html {
   font-family: "Roboto";
 }
 
-.navbar-nav{
+.navbar-nav {
   padding-left: 15px;
 }
 
-.navbar-brand{
+.navbar-brand {
   padding-left: 70px;
 }
 </style>

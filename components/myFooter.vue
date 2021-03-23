@@ -8,8 +8,7 @@
               <NuxtLink to="/"
                 ><img
                   src="~assets/images/PrepTime analyser bw.png"
-                  height="70px"
-                  width="auto"
+                  width="20%"
                   alt=""
               /></NuxtLink>
             </div>
