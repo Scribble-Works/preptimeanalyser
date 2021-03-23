@@ -1,95 +1,43 @@
 <template>
   <div class="container-fluid form-bg py-5">
+     
     <br /><br />
-    <div class="container-about">
-      <div class="about-sec">
-        <h5>About</h5>
-        <h3>Bringing the benefits of Preptime Analyser to every educator</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eum
-          doloremque facere dolor sapiente. Soluta laudantium quasi inventore,
-          nam ullam placeat iste possimus totam ipsum exercitationem ut, officia
-          id rerum?
-        </p>
+    <h3 class="container display-6">About</h3>
+    <div class="container container-about">
+      <div v-for="content in aboutData.content" :key="content.id">
+        <div class=" card card-body " >
+        <h5 class="card-title">{{ content.header }}</h5>
+        <p class="card-text" v-html="content.content"></p>
+        </div>
+        <br>
       </div>
     </div>
 
-    <div class="row pricing px-5 justify-content-between">
-      <h3 class="pl-5">Pricing</h3>
-      <div class="container col-md-2">
-        <h3 class="text-center">Free</h3>
-        <h5 class="text-center">Free</h5>
-        <div class="btn px-5 ml-5">
-          <NuxtLink class="btn btn-secondary btn-sm" type="button" to="#" role="button"
+    <div class=" row pricing px-5 d-flex justify-content-around">
+      <h3 class="container display-6" style="color:white;">Pricing</h3>
+
+      <div class="col-sm-3" v-for="content in aboutData.plans" :key="content.id">
+        <div class=" card card-body " style="width: 18rem;">
+        <h5 class="card-title text-center">{{ content.name }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted text-center">${{content.priceInCents /100}}</h6>
+        <hr>
+        <p class="card-text" v-html="content.features[0].description"></p>
+        <NuxtLink class="btn btn-secondary btn-sm" type="button" to="/contact" role="button"
             >Start</NuxtLink
           >
         </div>
-        <hr />
-        <ul class="features">
-          <li>Feature 1</li>
-          <li>Feature 2</li>
-          <li>Feature 3</li>
-          <li>Feature 4</li>
-        </ul>
-      </div>
-      <div class="container col-md-2">
-        <h3 class="text-center">Basic</h3>
-        <h5 class="text-center">GH₵10 / month</h5>
-        <div class="btn px-5 ml-5">
-          <NuxtLink class="btn btn-secondary btn-sm" type="button" to="#" role="button"
-            >Buy</NuxtLink
-          >
-        </div>
-        <hr />
-        <ul class="features">
-          <li>Feature 1</li>
-          <li>Feature 2</li>
-          <li>Feature 3</li>
-          <li>Feature 4</li>
-        </ul>
-      </div>
-      <div class="container col-md-2">
-        <h3 class="text-center">Standard</h3>
-        <h5 class="text-center">GH₵80 / month</h5>
-        <div class="btn px-5 ml-5">
-          <NuxtLink class="btn btn-secondary btn-sm" type="button" to="#" role="button"
-            >Buy</NuxtLink
-          >
-        </div>
-        <hr />
-        <ul class="features">
-          <li>Feature 1</li>
-          <li>Feature 2</li>
-          <li>Feature 3</li>
-          <li>Feature 4</li>
-        </ul>
-      </div>
-      <div class="container col-md-2">
-        <h3 class="text-center">Enterprice</h3>
-        <h5 class="text-center">GH₵250 / month</h5>
-        <div class="btn px-5 ml-5">
-          <NuxtLink class="btn btn-secondary btn-sm" type="button" to="#" role="button"
-            >Buy</NuxtLink
-          >
-        </div>
-        <hr />
-        <ul class="features">
-          <li>Feature 1</li>
-          <li>Feature 2</li>
-          <li>Feature 3</li>
-          <li>Feature 4</li>
-        </ul>
+        <br>
       </div>
       <div><br /></div>
     </div>
     <div class="container">
       <div class="row blog mt-3">
-        <div class="col-5">
-          <div class="action">
-            <h6>PrepTime Analyser in Action</h6>
-            <h3>Everything you need to know about PrepTime Analyser</h3>
+        <div class="col-sm-5">
+          <div class="card card-body">
+            <h3 class="card-title">PrepTime Analyser in Action</h3>
+            <h6 class="card-subtitle">Everything you need to know about PrepTime Analyser</h6>
             <div class="btn">
-              <NuxtLink class="btn btn-secondary btn-lg" type="button" to="#" role="button"
+              <NuxtLink class="btn btn-secondary btn-lg" type="button" to="/blog" role="button"
                 >Blog</NuxtLink
               >
             </div>
@@ -117,6 +65,27 @@
   </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return{
+      aboutData:{}
+    }
+  },
+  created () {
+    this.getAboutData();
+  },
+
+  methods : {
+    async getAboutData(){
+      const data = await this.$axios.$get('/about-page')
+      this.aboutData = data
+    }
+  }
+}
+</script>
+
+
 <style>
 .about-sec {
   background: #fff9f9;
@@ -126,8 +95,6 @@
 
 .pricing {
   background: #3e4f5c;
-  height: 110%;
-  width: 100%;
 }
 .col-md-2{
   background: #ffffff;
