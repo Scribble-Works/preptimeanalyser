@@ -3,7 +3,7 @@
     <footer>
       <div class="container-fluid">
         <div class="row justify-content-between footer-docs">
-          <div class="col">
+          <div class="col mt-2">
             <div class="img-link">
               <NuxtLink to="/"
                 ><img
@@ -14,18 +14,18 @@
               /></NuxtLink>
             </div>
           </div>
-          <div class="col">
+          <div class="col mt-4">
             <NuxtLink class="footer-links" to="">Privacy</NuxtLink>
           </div>
-          <div class="col">
+          <div class="col mt-4">
             <NuxtLink class="footer-links" to="">Terms</NuxtLink>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 mt-4">
             <NuxtLink class="footer-links" to=""
               >About PrepTime Analyser</NuxtLink
             >
           </div>
-          <div class="col-sm-1">
+          <div class="col-sm-1 mt-4">
             <NuxtLink class="footer-links" to="">Feedback</NuxtLink>
           </div>
         </div>
@@ -38,4 +38,8 @@
 export default {};
 </script>
 <style>
+footer{
+  background: #C4C4C4;
+  height: 90%;
+}
 </style>
