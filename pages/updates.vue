@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div class="container">
-      <div class="row top-buffer">
-        <div class="col">
+    <div class="container ">
+      <div class="row d-flex justify-content-around top-buffer">
+        <div class="col col-sm-3">
           <img
             src="~assets/images/PrepTime analyser logo.png"
-            height="170px"
-            width="405px"
+            
+            width="50%"
             alt=""
           />
         </div>
-        <div class="col col-lg-7">
+        <div class="col col-sm-9">
           <hr />
           <h2>PrepTime Analyser Now On Dark Mode</h2>
           <p>
