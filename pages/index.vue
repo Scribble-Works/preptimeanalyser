@@ -111,7 +111,23 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data () {
+    return{
+      homeData:{}
+    }
+  },
+  created () {
+    this.getHomeData();
+  },
+
+  methods : {
+    async getHomeData(){
+      const data = await this.$axios.$get('/home-page')
+      this.homeData = data
+    }
+  }
+}
 </script>
 
 <style>

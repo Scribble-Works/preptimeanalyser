@@ -14,10 +14,13 @@
     </div>
 
     <div class=" row pricing px-5 d-flex justify-content-around">
-      <h3 class="container display-6" style="color:white;">Pricing</h3>
+      <div >
+        <h3 class="container" style="color:white;">Pricing</h3>
+      </div>
+      
 
       <div class="col-sm-3" v-for="content in aboutData.plans" :key="content.id">
-        <div class=" card card-body " style="width: 18rem;">
+        <div class=" card card-body " style="">
         <h5 class="card-title text-center">{{ content.name }}</h5>
         <h6 class="card-subtitle mb-2 text-muted text-center">${{content.priceInCents /100}}</h6>
         <hr>
