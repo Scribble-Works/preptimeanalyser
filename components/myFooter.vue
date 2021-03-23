@@ -13,18 +13,18 @@
               /></NuxtLink>
             </div>
           </div>
-          <div class="col mt-4">
+          <div class="col mt-3">
             <NuxtLink class="footer-links" to="">Privacy</NuxtLink>
           </div>
-          <div class="col mt-4">
+          <div class="col mt-3">
             <NuxtLink class="footer-links" to="">Terms</NuxtLink>
           </div>
-          <div class="col-sm-6 mt-4">
+          <div class="col-sm-6 mt-3">
             <NuxtLink class="footer-links" to=""
               >About PrepTime Analyser</NuxtLink
             >
           </div>
-          <div class="col-sm-1 mt-4">
+          <div class="col-sm-1 mt-3">
             <NuxtLink class="footer-links" to="">Feedback</NuxtLink>
           </div>
         </div>
