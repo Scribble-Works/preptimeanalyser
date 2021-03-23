@@ -1,11 +1,10 @@
 <template>
   <div>
-    <div class="container ">
+    <div class="container">
       <div class="row d-flex justify-content-around top-buffer">
         <div class="col col-sm-3">
           <img
             src="~assets/images/PrepTime analyser logo.png"
-            
             width="50%"
             alt=""
           />
@@ -21,7 +20,9 @@
           </p>
 
           <div class="btn">
-            <NuxtLink class="btn btn-link" to="#" role="button">Read More >></NuxtLink>
+            <NuxtLink class="btn btn-link" to="#" role="button"
+              >Read More >></NuxtLink
+            >
           </div>
           <hr />
         </div>
@@ -162,7 +163,7 @@ blockquote {
   height: 286px;
   width: 310px;
 }
-.btn-link{
+.btn-link {
   color: #000;
 }
 </style>
