@@ -39,8 +39,16 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/axios'
   ],
+
+  axios: {
+    // proxy: true
+    baseUrl: 'https://admin.preptimeanalytics.com'
+  },
+
+
   //google fonts impleemntation
   googleFonts: {
     families: {
