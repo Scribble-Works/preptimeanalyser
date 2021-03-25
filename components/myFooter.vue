@@ -39,6 +39,7 @@ export default {};
 <style>
 footer{
   background: #C4C4C4;
-  height: 90%;
+  margin-top:10%;
 }
+
 </style>

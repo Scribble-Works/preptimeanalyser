@@ -1,7 +1,5 @@
 <template>
   <div class="container-fluid form-bg py-5">
-     
-    <br /><br />
     <h3 class="container display-6">About</h3>
     <div class="container container-about">
       <div v-for="content in aboutData.content" :key="content.id">

@@ -1,14 +1,8 @@
 <template>
   <div>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <NuxtLink class="navbar-brand" to="/"
-        ><img
-          src="~assets/images/PrepTime analyser logo.png"
-          width="30"
-          alt=""
-          class="d-inline-block align-top"
-      /></NuxtLink>
-      <button
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div>
+        <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -19,6 +13,15 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      <NuxtLink class="navbar-brand" to="/"
+        ><img
+          src="~assets/images/PrepTime analyser logo.png"
+          width="30"
+          alt=""
+      /></NuxtLink>
+      </div>
+      
+      
       <div class="collapse navbar-collapse" id="navbarText">
         <div class="container-fluid">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -57,9 +60,6 @@ html {
   padding-left: 15px;
 }
 
-.navbar-brand {
-  padding-left: 70px;
-}
 </style>
 <script>
 export default {};

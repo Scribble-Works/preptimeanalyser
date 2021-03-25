@@ -1,7 +1,7 @@
 <template>
   <div>
     <myHeader />
-    <Nuxt />
+    <Nuxt class="content" />
     <myFooter />
   </div>
 </template>
@@ -64,6 +64,10 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.content{
+  padding-top: 10%;
 }
 </style>
 
