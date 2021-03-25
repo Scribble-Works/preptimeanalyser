@@ -132,7 +132,7 @@ export default {
 
 <style>
 .top-buffer {
-  margin-top: 100px;
+  margin-top: 1em;
 }
 .h-45 {
   padding: 1%;

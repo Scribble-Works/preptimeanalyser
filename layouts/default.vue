@@ -67,7 +67,7 @@ html {
 }
 
 .content{
-  padding-top: 10%;
+  padding-top: 1em;
 }
 </style>
 
