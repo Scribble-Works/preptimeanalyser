@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="row about form-bg top-buffer">
+    <div class="row about form-bg">
       <div class="col-7 mx-5">
         <div class="h-45 mx-5">
           <h2>Analysing With Preptime Analyser</h2>
