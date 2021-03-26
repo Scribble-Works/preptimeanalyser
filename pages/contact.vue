@@ -75,25 +75,11 @@
       </div>
     </div>
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" :data-dismiss="modal=false" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <div>
+      <b-modal id="modal" title="BootstrapVue">
+        <p class="my-4">{{statusMessage}}</p>
+      </b-modal>
     </div>
-  </div>
-</div>
   </div>
 </template>
 <script>
@@ -101,19 +87,22 @@ export default {
   data() {
     return {
       contactData: {},
-      modal:false
+      statusMessage:''
     };
   },
   created() {},
 
   methods: {
     async postContactData() {
-      this.modal ? this.modal=false : this.modal=true;
-      /* const data = await this.$axios.$post("/contacts", this.contactData);
-      if (data.id) {
+      const data = await this.$axios.$post("/contacts", this.contactData);
+      if (!data.error) {
         this.aboutData = {};
+        this.statusMessage='Thank you for contacting us.\nWe will reach out to you very soon.'
+        this.$bvModal.show('modal')
       } else {
-      } */
+        this.statusMessage='Something went wrong while sending your message.\nPlease try again soon'
+        this.$bvModal.show('modal')
+      }
     },
   },
 };
