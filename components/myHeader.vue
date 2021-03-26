@@ -28,14 +28,14 @@
             <li class="nav-item">
               <NuxtLink class="nav-link" to="/about">About</NuxtLink>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <NuxtLink class="nav-link" to="/news">News Article</NuxtLink>
             </li>
             <li class="nav-item">
               <NuxtLink class="nav-link" to="/updates"
                 >Products Updates</NuxtLink
               >
-            </li>
+            </li> -->
             <li class="nav-item">
               <NuxtLink class="nav-link" to="/blog">Blog Post</NuxtLink>
             </li>
