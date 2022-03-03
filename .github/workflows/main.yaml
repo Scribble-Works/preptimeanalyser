@@ -24,8 +24,8 @@ jobs:
     #   run: yarn run build
 
     - name: Generate deployment package
-      # run: zip -r deploy.zip . -x '*.git*'
-      run: git archive --format=zip HEAD > deploy.zip
+      run: zip -r deploy.zip ./* -x '*.git*'
+      # run: git archive --format=zip HEAD > deploy.zip
 
     - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v20
