@@ -2,6 +2,11 @@
   "name": "preptime_analyser",
   "version": "1.0.0",
   "private": true,
+
+  "engines" : { 
+    "npm" : ">=8.3.1",
+    "node" : ">=16.14.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
