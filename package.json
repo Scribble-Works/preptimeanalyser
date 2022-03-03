@@ -8,6 +8,7 @@
     "node" : ">=16.14.0"
   },
   "scripts": {
+    "prestart": "yarn install",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
