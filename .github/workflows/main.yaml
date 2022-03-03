@@ -12,16 +12,16 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
 
-    - name: Install Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 16.x
+    # - name: Install Node.js
+    #   uses: actions/setup-node@v1
+    #   with:
+    #     node-version: 16.x
 
-    - name: Install NPM packages
-      run: yarn install
+    # - name: Install NPM packages
+    #   run: yarn install
 
-    - name: Build project
-      run: yarn run build
+    # - name: Build project
+    #   run: yarn run build
 
     - name: Generate deployment package
       run: zip -r deploy.zip . -x '*.git*'
