@@ -27,7 +27,7 @@ jobs:
       run: mkdir deploy
 
     - name: Generate deployment package
-      run: (cd deploy && zip -r -X "../deploy.zip" . -i .)
+      run: (cd deploy && zip -r deploy.zip ../* -x '*.git*')
       # run: zip -r deploy.zip . -x '*.git*' -J
       # run: git archive --format=zip HEAD > deploy.zip
 
