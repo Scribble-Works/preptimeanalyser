@@ -2,42 +2,42 @@ name: Deploy main
 on:
   push:
     branches:
-    - debug_deploy
+      - debug_deploy
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
 
-    - name: Checkout source code
-      uses: actions/checkout@v2
+      # - name: Install Node.js
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: 16.x
 
-    # - name: Install Node.js
-    #   uses: actions/setup-node@v1
-    #   with:
-    #     node-version: 16.x
+      # - name: Install NPM packages
+      #   run: yarn install
 
-    # - name: Install NPM packages
-    #   run: yarn install
+      # - name: Build project
+      #   run: yarn run build
 
-    # - name: Build project
-    #   run: yarn run build
+      - name: Prep zip directory
+        run: mkdir deploy
 
-    - name: Prep zip directory
-      run: mkdir deploy
+      - name: Generate deployment package
+        run: (cd deploy && zip -r deploy.zip ../* -x '*.git*')
+        # run: zip -r deploy.zip . -x '*.git*' -J
+        # run: git archive --format=zip HEAD > deploy.zip
 
-    - name: Generate deployment package
-      run: (cd deploy && zip -r deploy.zip ../* -x '*.git*')
-      # run: zip -r deploy.zip . -x '*.git*' -J
-      # run: git archive --format=zip HEAD > deploy.zip
-
-    - name: Deploy to EB
-      uses: einaregilsson/beanstalk-deploy@v20
-      with:
-        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: ${{ secrets.AWS_EB_APPLICATION_NAME }}
-        environment_name: ${{ secrets.AWS_EB_APPLICATION_ENVIRONMENT }}
-        version_label: "ver-${{ github.sha }}"
-        region: eu-west-1
-        deployment_package: deploy/deploy.zip
+      - name: Deploy to EB
+        uses: einaregilsson/beanstalk-deploy@v20
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: ${{ secrets.AWS_EB_APPLICATION_NAME }}
+          environment_name: ${{ secrets.AWS_EB_APPLICATION_ENVIRONMENT }}
+          version_label: "ver-${{ github.sha }}"
+          region: eu-west-1
+          deployment_package: deploy/deploy.zip
+          
