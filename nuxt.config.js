@@ -45,7 +45,7 @@ export default {
 
   axios: {
     // proxy: true
-    baseUrl: 'https://admin.preptimeanalytics.com'
+    baseUrl: 'http://admin.preptimeanalytics.com'
   },
 
 
